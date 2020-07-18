@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 44395
+          "Port": 44382
         }
       ],
       "UpstreamPathTemplate": "/api/v1/widget",

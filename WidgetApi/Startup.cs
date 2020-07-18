@@ -17,7 +17,7 @@ namespace WidgetApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var authenticationUrl = "https://localhost:44351";
+            var authenticationUrl = "https://localhost:44322";
 
             services.AddMvcCore()
                 .AddAuthorization()

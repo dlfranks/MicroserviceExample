@@ -22,7 +22,7 @@ namespace TestClient
                 Console.WriteLine("Calling IdentityServer4 discovery endpoint...");
                 Console.WriteLine(Environment.NewLine);
 
-                var discoveryUrl = "https://localhost:44351";
+                var discoveryUrl = "https://localhost:44322";
                 var clientId = "WidgetClient";
                 var clientSecret = "p@ssw0rd";
                 var discoveryClient = new DiscoveryClient(discoveryUrl);
@@ -46,7 +46,7 @@ namespace TestClient
                 Console.WriteLine("Calling Ocelot endpoint with bearer token to get widgets...");
                 Console.WriteLine(Environment.NewLine);
 
-                var uri = "https://localhost:44371/api/v1/widget";
+                var uri = "https://localhost:44334/api/v1/widget";
                 var gatewayClient = new HttpClient();
                 gatewayClient.SetBearerToken(tokenResponse.AccessToken);
                 var response = await gatewayClient.GetAsync(uri);
